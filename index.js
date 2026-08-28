@@ -1,4 +1,31 @@
 require('dotenv').config();
+
+// Generate config.json from environment variables BEFORE anything else
+const fs = require('fs');
+const path = require('path');
+const configPath = path.join(process.cwd(), 'config.json');
+if (!fs.existsSync(configPath)) {
+    const defaultConfig = {
+        TOKEN: process.env.TOKEN || '',
+        MONGO_DB: process.env.MONGO_DB || '',
+        MONGO_DB1: process.env.MONGO_DB1 || '',
+        cooldown: process.env.COOLDOWN !== 'false',
+        boss: (process.env.BOSS || '').split(',').filter(id => id.trim()).map(id => id.trim()),
+        admin: (process.env.ADMIN || '').split(',').filter(id => id.trim()).map(id => id.trim()),
+        prem: (process.env.PREM || '').split(',').filter(id => id.trim()).map(id => id.trim()),
+        np: (process.env.NP || '').split(',').filter(id => id.trim()).map(id => id.trim()),
+        prefix: process.env.PREFIX || '%',
+        invite: process.env.INVITE || ''
+    };
+    try {
+        fs.writeFileSync(configPath, JSON.stringify(defaultConfig, null, 4));
+        console.log('✅ config.json generated from environment variables');
+    } catch (error) {
+        console.error('❌ Failed to generate config.json:', error.message);
+        process.exit(1);
+    }
+}
+
 require('module-alias/register');
 
 // Set custom DNS to resolve MongoDB Atlas SRV records
@@ -9,7 +36,6 @@ try {
     console.warn('Could not set custom DNS:', dnsErr.message);
 }
 
-const path = require('path');
 const Xytrix = require(`./structures/Xytrix.js`);
 const client = new Xytrix();
 Xytrix.setMaxListeners(20);
@@ -17,7 +43,6 @@ this.config = client.config;
 const Giveaway = require('./models/giveaway');
 const vcban = require('./commands/voice/vcban');
 const ms = require('ms');
-const fs = require('fs');
 const fetch = require('node-fetch');
 const FormData = require('form-data');
 const { Client, MessageActionRow, MessageButton, MessageEmbed, MessageAttachment } = require('discord.js');
