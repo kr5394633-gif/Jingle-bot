@@ -47,7 +47,7 @@ module.exports = class Xytrix extends Client {
         this.commands = new Collection();
         this.categories = fs.readdirSync('./commands/');
         this.emoji = {
-            tick: '<:Xytrix_yes:1430998886494896240>',
+            tick: '<a:cyan_arrow:1410265507038498886>',
             cross: '',
             dot: '<a:Xytrix_dot:1431006158549684247>'
         };

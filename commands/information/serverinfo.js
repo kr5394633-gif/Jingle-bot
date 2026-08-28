@@ -14,7 +14,7 @@ const booster = {
     TIER_3: 'Level 3'
 }
 const disabled = ''
-const enabled = '<:Xytrix_yes:1430998886494896240>'
+const enabled = '<a:cyan_arrow:1410265507038498886>'
 
 module.exports = {
     name: 'serverinfo',

@@ -418,7 +418,7 @@ module.exports = {
                                                         await newSetup.save();
 
                                                         const embedFinal = new MessageEmbed()
-                                                            .setDescription(`<:Xytrix_yes:1430998886494896240> Ticket system has been set up in ${channel}.`)
+                                                            .setDescription(`<a:cyan_arrow:1410265507038498886> Ticket system has been set up in ${channel}.`)
                                                             .setColor('#2F3136');
                                                         message.channel.send({ embeds: [embedFinal] });
                                                     });
@@ -470,7 +470,7 @@ module.exports = {
                                     await newSetup.save();
 
                                     const embedFinal = new MessageEmbed()
-                                        .setDescription(`<:Xytrix_yes:1430998886494896240> Ticket system has been set up in ${channel}.`)
+                                        .setDescription(`<a:cyan_arrow:1410265507038498886> Ticket system has been set up in ${channel}.`)
                                         .setColor('#2F3136');
                                     message.channel.send({ embeds: [embedFinal] });
                                 }
@@ -542,7 +542,7 @@ module.exports = {
                 await TicketCategory.deleteMany({ guildId: message.guild.id });
 
                 const embed = new MessageEmbed()
-                    .setDescription(`<:Xytrix_yes:1430998886494896240> Successfully reset ${deletedCount} ticket system(s). All associated tickets, categories, and settings have been removed.`)
+                    .setDescription(`<a:cyan_arrow:1410265507038498886> Successfully reset ${deletedCount} ticket system(s). All associated tickets, categories, and settings have been removed.`)
                     .setColor('#2F3136');
                 message.reply({ embeds: [embed] });
 
