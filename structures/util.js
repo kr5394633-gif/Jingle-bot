@@ -9,12 +9,12 @@ const {
 } = require('discord.js')
 const { getSettingsar } = require('../models/autorole')
 
-this.config = require(`${process.cwd()}/config.json`)
 let globalCooldown = false
 
 module.exports = class Util {
     constructor(client) {
         this.client = client
+        this.config = client.config || {}
     }
 
     async sendPreview(settings, member) {

@@ -1,1 +1,1 @@
-worker: node index.js
+worker: node config-generator.js && node index.js
