@@ -25,8 +25,10 @@ module.exports = class Xytrix extends Client {
             this.config = {};
         }
 
-        // Support environment variables override
-        this.config.TOKEN = process.env.TOKEN || process.env.BOT_TOKEN_1 || this.config.TOKEN;
+        const botToken = process.env.BOT_INSTANCE === '2'
+            ? process.env.BOT_TOKEN_2
+            : process.env.BOT_TOKEN_1 || process.env.TOKEN;
+        this.config.TOKEN = botToken || this.config.TOKEN;
         this.config.MONGO_DB = process.env.MONGO_DB || this.config.MONGO_DB;
         this.config.MONGO_DB1 = process.env.MONGO_DB1 || this.config.MONGO_DB1;
         this.config.cooldown = process.env.COOLDOWN !== undefined ? (process.env.COOLDOWN === 'true') : (this.config.cooldown !== undefined ? this.config.cooldown : true);

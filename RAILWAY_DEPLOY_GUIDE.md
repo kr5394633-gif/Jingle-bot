@@ -51,7 +51,8 @@ Once the project is created in Railway:
 4. Add ALL of these environment variables:
 
 ```
-TOKEN = your_discord_bot_token_here
+BOT_TOKEN_1 = your_first_discord_bot_token_here
+BOT_TOKEN_2 = your_second_discord_bot_token_here
 MONGO_DB = your_mongodb_connection_string
 MONGO_DB1 = your_secondary_mongodb_string
 BOSS = 1090621839061033010,1527609131043917874,458651863668228096
@@ -67,7 +68,7 @@ NODE_ENV = production
 
 1. Go to the **"Settings"** tab in your Railway project
 2. Verify:
-   - **Start Command**: `node index.js` (should auto-detect)
+   - **Start Command**: `node start-bots.js` (should auto-detect)
    - **Build Command**: Leave empty (auto-detect)
    - **Port**: Not required for Discord bots
 

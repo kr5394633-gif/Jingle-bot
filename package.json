@@ -38,7 +38,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node config-generator.js && node index.js"
+        "start": "node config-generator.js && node start-bots.js",
+        "start:single": "node config-generator.js && node index.js"
     },
     "repository": {
         "type": "git",
