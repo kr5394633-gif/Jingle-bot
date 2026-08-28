@@ -221,7 +221,7 @@ module.exports = {
             })
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .setDescription(
-                `> <a:crown_crown:1538073801835679794> **𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗦𝟭𝟭 𝗣𝗥𝗜𝗠𝗘**\n` +
+                `> <a:crown_crown:1538073801835679794> **𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗕𝗟𝗔𝗖𝗞 𝗦𝗬𝗦𝗧𝗘𝗠**\n` +
                 `> *Your Premium Server Security & Management Bot*\n` +
                 `> ━━━━━━━━━━━━━━━━━━━━━━━━\n` +
                 `> <a:cyan_arrow:1537440253177110608> **Prefix :** \`${prefix}\`\n` +
@@ -229,10 +229,10 @@ module.exports = {
                 `> ━━━━━━━━━━━━━━━━━━━━━━━━`
             )
             .addField(
-                '🛡️ ┃ **𝗦𝟭𝟭 𝗣𝗥𝗜𝗠𝗘   𝗠𝗢𝗗𝗨𝗟𝗘𝗦**',
+                '🛡️ ┃ **𝗕𝗟𝗔𝗖𝗞 𝗦𝗬𝗦𝗧𝗘𝗠   𝗠𝗢𝗗𝗨𝗟𝗘𝗦**',
                 `\`\`\`\n` +
                 `╔══════════════════════╦══════════════════╗\n` +
-                `║            𝗦𝟭𝟭 𝗣𝗥𝗜𝗠𝗘 𝗠𝗢𝗗𝗨𝗟𝗘𝗦             ║\n` +
+                `║            𝗕𝗟𝗔𝗖𝗞 𝗦𝗬𝗦𝗧𝗘𝗠 𝗠𝗢𝗗𝗨𝗟𝗘𝗦             ║\n` +
                 `╠══════════════════════╬══════════════════╣\n` +
                 `║  » AntiNuke          ║  » Moderation    ║\n` +
                 `║  » Utility           ║  » Welcomer      ║\n` +
