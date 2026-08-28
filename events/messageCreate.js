@@ -388,7 +388,7 @@ module.exports = async (client) => {
                     components: [row]
                 })
             }
-            let prefix = message.guild.prefix || '&'
+            let prefix = message.guild.prefix || client.config.prefix || '%';
             let datab = client.noprefix || []
             const mentionRegex = new RegExp(`<@!?${client.user.id}>`);
             let isMention = mentionRegex.test(message.content);

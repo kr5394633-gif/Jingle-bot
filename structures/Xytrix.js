@@ -40,6 +40,7 @@ module.exports = class Xytrix extends Client {
         this.config.prem = parseArray(process.env.PREM, this.config.prem);
         this.config.np = parseArray(process.env.NP, this.config.np);
         this.config.invite = process.env.INVITE || this.config.invite;
+        this.config.prefix = process.env.PREFIX || this.config.prefix || '%';
         this.logger = require('./logger');
         this.commands = new Collection();
         this.categories = fs.readdirSync('./commands/');
