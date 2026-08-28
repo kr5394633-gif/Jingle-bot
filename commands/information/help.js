@@ -72,7 +72,7 @@ module.exports = {
             embed.setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
                 .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
                 .setFooter({
-                    text: `S11 PRIME on Top 🔥`,
+                    text: `BLACK SYSTEM on Top 🔥`,
                     iconURL: proxy4s.displayAvatarURL({
                         dynamic: true
                     })
@@ -257,7 +257,7 @@ module.exports = {
                 false
             )
             .setFooter({
-                text: `S11 PRIME on Top 🔥 • Premium Security Bot`,
+                text: `BLACK SYSTEM on Top 🔥 • Premium Security Bot`,
                 iconURL: client.user.displayAvatarURL({ dynamic: true })
             })
             .setTimestamp();

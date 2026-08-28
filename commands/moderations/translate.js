@@ -57,7 +57,7 @@ module.exports = {
       .setDescription(`\`\`\`\nTranslating: ${query}\`\`\``)
       .setAuthor(message.author.username, message.author.displayAvatarURL({ dynamic: true }))
       .setColor(client.color)
-      .setFooter('Translated by S11 PRIME');
+      .setFooter('Translated by BLACK SYSTEM');
 
     const tl = await message.channel.send({ embeds: [initialEmbed], components: [row] });
 
@@ -77,7 +77,7 @@ module.exports = {
         .setDescription(`\`\`\`\n${languages[selectedLanguage]}: ${result.text}\`\`\``)
         .setAuthor(message.author.username, message.author.displayAvatarURL({ dynamic: true }))
         .setColor(client.color)
-        .setFooter('Translated by S11 PRIME');
+        .setFooter('Translated by BLACK SYSTEM');
 
       interaction.update({ embeds: [translatedEmbed], components: [] }).catch(console.error);
     });

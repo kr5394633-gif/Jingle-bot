@@ -86,9 +86,9 @@ module.exports = {
         } 
 
         try {
-            let category = message.guild.channels.cache.find(c => c.type === 'GUILD_CATEGORY' && c.name === 'S11 PRIME Logs');
+            let category = message.guild.channels.cache.find(c => c.type === 'GUILD_CATEGORY' && c.name === 'BLACK SYSTEM Logs');
             if (!category) {
-                category = await message.guild.channels.create('S11 PRIME Logs', {
+                category = await message.guild.channels.create('BLACK SYSTEM Logs', {
                     type: 'GUILD_CATEGORY',
                     permissionOverwrites: [
                         {
@@ -160,7 +160,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setTitle('Logging Channels Setup Complete')
-                        .setDescription('All necessary logging channels have been successfully created under the "S11 PRIME LOGS" category.')
+                        .setDescription('All necessary logging channels have been successfully created under the "BLACK SYSTEM LOGS" category.')
                         .addField('Channels Created', '- **modlogs:** Logs moderation-related events.\n- **memberlogs:** Logs member-related events.\n- **msglogs:** Logs message-related events.\n- **channellogs:** Logs channel-related events.\n- **voicelogs:** Logs voice-related events\n- **rolelogs:** Logs role-related events.')
                         .addField('Additional Configuration', 'You can further customize logging settings and manage permissions as needed.')
                 ]

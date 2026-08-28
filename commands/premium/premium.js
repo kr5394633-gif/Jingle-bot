@@ -16,7 +16,7 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed()
             .setColor(client.color)
-            .setFooter(`Developed By S11 PRIME Team`)
+            .setFooter(`Developed By BLACK SYSTEM Team`)
         const row = new MessageActionRow().addComponents(
             new MessageButton()
                 .setLabel('Premium')
@@ -105,7 +105,7 @@ module.exports = {
                             )
                         ]
                     })         
-                    await message.guild.me.setNickname('S11 PRIME')           
+                    await message.guild.me.setNickname('BLACK SYSTEM')
                 }
                 break
 

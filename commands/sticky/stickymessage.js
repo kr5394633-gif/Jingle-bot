@@ -248,7 +248,7 @@ module.exports = {
                         }
 
                         if (!isPremium && stickyMessages.length > channelLimit) {
-                            embed.setFooter(`S11 PRIME on Top 🔥`, client.user.displayAvatarURL());
+                            embed.setFooter(`BLACK SYSTEM on Top 🔥`, client.user.displayAvatarURL());
                             embed.addField('**Note:**', `Your Premium subscription has expired!\nUpgrade now to unlock all the exclusive features and enjoy sticky messages in up to 5 channels with embed support.`);
                         }
                 
@@ -363,7 +363,7 @@ module.exports = {
                             return message.channel.send({
                                 embeds: [
                                     new MessageEmbed()
-                                        .setDescription('All necessary logging channels have been successfully created under the "S11 PRIME LOGS" category.')
+                                        .setDescription('All necessary logging channels have been successfully created under the "BLACK SYSTEM LOGS" category.')
                                         .setColor(client.color)
                                 ]
                             });
