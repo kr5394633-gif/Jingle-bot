@@ -19,7 +19,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor('#2F3136')
                         .setDescription(
-                            `<:Xytrix_no:1430998925308858369> | You must have \`Administrator\` permissions to use this command.`
+                            `You must have \`Administrator\` permissions to use this command.`
                         )
                 ]
             })
@@ -30,7 +30,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor('#2F3136')
                         .setDescription(
-                            `<:Xytrix_no:1430998925308858369> | I don't have \`Administrator\` permissions to execute this command.`
+                            `I don't have \`Administrator\` permissions to execute this command.`
                         )
                 ]
             })
@@ -45,7 +45,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor('#2F3136')
                         .setDescription(
-                            `<:Xytrix_no:1430998925308858369> | You must have a higher role than me to use this command.`
+                            `You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -88,7 +88,7 @@ module.exports = {
                 const embed = new MessageEmbed()
                     .setColor('#2F3136')
                     .setDescription(
-                        `<:Xytrix_no:1430998925308858369> | You have reached the maximum number of ticket systems \`${maxSystems}\` for this server.\n` +
+                        `You have reached the maximum number of ticket systems \`${maxSystems}\` for this server.\n` +
                         `Upgrade to premium to set up up to \`5\` ticket systems!`
                     );
 
@@ -137,7 +137,7 @@ module.exports = {
                 if (existingSetup) {
                     const invalidEmbed = new MessageEmbed()
                         .setColor('#2F3136')
-                        .setDescription(`<:Xytrix_no:1430998925308858369> This channel already has a ticket system set up. Please choose a different channel.`);
+                        .setDescription(`This channel already has a ticket system set up. Please choose a different channel.`);
                     await message.channel.send({ embeds: [invalidEmbed] });
                     return;
                 }
@@ -487,7 +487,7 @@ module.exports = {
 
                 if (existingSetups.length === 0) {
                     const embed = new MessageEmbed()
-                        .setDescription('<:Xytrix_no:1430998925308858369> No ticket systems are set up in this server.')
+                        .setDescription('No ticket systems are set up in this server.')
                         .setColor('#2F3136');
                     return message.reply({ embeds: [embed] });
                 }
@@ -549,7 +549,7 @@ module.exports = {
             } catch (error) {
                 console.error('Error resetting ticket systems:', error);
                 const embedError = new MessageEmbed()
-                    .setDescription('<:Xytrix_no:1430998925308858369> An error occurred while resetting the ticket systems.')
+                    .setDescription('An error occurred while resetting the ticket systems.')
                     .setColor('#2F3136');
                 message.reply({ embeds: [embedError] });
             }
@@ -560,7 +560,7 @@ module.exports = {
 
             if (ticketSystems.length === 0) {
                 const embed = new MessageEmbed()
-                    .setDescription('<:Xytrix_no:1430998925308858369> No ticket systems are set up in this server.')
+                    .setDescription('No ticket systems are set up in this server.')
                     .setColor('#2F3136');
                 return message.channel.send({ embeds: [embed] });
             }

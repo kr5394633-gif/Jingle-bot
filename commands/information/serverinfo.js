@@ -13,7 +13,7 @@ const booster = {
     TIER_2: 'Level 2',
     TIER_3: 'Level 3'
 }
-const disabled = '<:Xytrix_no:1430998925308858369>'
+const disabled = ''
 const enabled = '<:Xytrix_yes:1430998886494896240>'
 
 module.exports = {
